@@ -1,0 +1,558 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+ 
+ height: 100vh;
+  background: yellow;
+  font-color: yellow;
+ 
+    
+}
+.containers {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Ajuste conforme necessário */
+    background-color: yellow;
+    padding: 20px;
+  
+}
+
+.boxing {
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Permite que as divs cresçam igualmente */
+    margin: 0 10px; /* Espaço entre as divs */
+    position: relative; /* Necessário para posicionar a imagem absolutamente dentro da div */
+}
+
+.boxing img {
+    width: 50px;
+    height: 40px;
+    
+}
+
+
+.acai h1{
+   font-family: "impact", cursive;
+	font-size: 100px;
+	position: absolute;
+	left: 60vh;
+	top: 40px;
+    color: #FFFFFF;
+}
+
+.acai h2{
+	font-family: "Impact", cursive;
+	font-size: 100px;
+	position: absolute;
+	left: 60vh;
+	top: 119px;
+    color: green;
+}
+.aca {
+	width: 400px;
+	height: 800px;
+}
+
+.menu img{
+	width: 50px;
+	height: 50px;
+
+    position: absolute;
+	top: 120vh;
+	left: 380px;
+}
+.aca h2{
+	 position: absolute;
+	top: 105vh;
+    left: 76px;
+    color: brown;
+}
+
+#icone{
+	height: 70px;
+	width: 70px;
+    position: absolute;
+	left: 140vh;
+	top: 209px;
+}
+span{
+	
+	position: absolute;
+	left: 140vh;
+	top: 281px;
+}
+p{
+	position: absolute;
+	left: 140vh;
+	top: 299px;
+}
+.cor {
+  text-align: center;
+  background-color: #AA00FF;
+  width: 100%;
+  height: 221.5vh; 
+ border: 5px solid #3D025A;
+  position: absolute;
+  left: 0; /* Alinha à esquerda */
+  top: 1200px;
+  box-sizing: border-box; /* Inclui a borda na largura total */
+  margin: 0; /* Remove margens externas */
+  padding: 0; /* Remove padding interno */
+}
+.cor img{
+	height: 628px;
+	width: 628px;
+	border-radius: 30px;
+	 box-shadow:  4px 4px 12px rgba(0, 0, 0, 0.8);
+	 margin: 10px;
+}
+.boxi img{
+	width: 300px;
+    height: 400px;
+}
+
+.Botão svg{
+	 width: 20px;
+    height: 20px;
+    
+}
+.Botão button{
+	
+	
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+    box-shadow:  4px 4px 12px rgba(0, 0, 0, 0.8);
+	background-color: #AA00FF;
+    cursor: Pointer;	
+
+   
+   position: absolute;
+	left: 10vh;
+	top: 30px;
+}
+.Botão button:hover {
+    background-color: #3D025A; 
+    transform: scale(1.2);
+}
+
+.Cor svg {
+    width: 20px;
+    height: 20px;
+}
+
+.Cor button {
+   height: 50px;
+	width: 50px;
+	border-radius: 100%;
+    box-shadow:  4px 4px 12px rgba(0, 0, 0, 0.8);
+	background-color: #AA00FF;
+    cursor: pointer;
+    
+	position: absolute;
+	left: 10vh;
+	top: 100px;
+}
+
+.Cor button:hover {
+    background-color: #3D025A; 
+    transform: scale(1.2);
+}
+.EGG svg {
+    width: 20px;
+    height: 20px;
+}
+.EGG button {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+    background-color: #AA00FF;
+    cursor: pointer;
+    position: absolute;
+    left: 10vh;
+    top: 180px;
+}
+.EGG button:hover {
+    background-color: #3D025A;
+    transform: scale(1.2);
+}
+
+.Steak svg {
+    width: 20px;
+    height: 20px;
+}
+.Steak button {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+    background-color: #AA00FF;
+    cursor: pointer;
+    position: absolute;
+    left: 10vh;
+    top: 170px;
+}
+.Steak button:hover {
+    background-color: #3D025A;
+    transform: scale(1.2);
+}
+
+.Beef svg {
+    width: 30px;
+    height: 30px;
+}
+.Beef button {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+    background-color: #AA00FF;
+    cursor: pointer;
+    position: absolute;
+    left: 10vh;
+    top: 240px;
+}
+.Beef button:hover {
+    background-color: #3D025A;
+    transform: scale(1.2);
+}
+
+.noodle svg {
+    width: 30px;
+    height: 30px;
+}
+.noodle button {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+    background-color: #AA00FF;
+    cursor: pointer;
+    position: absolute;
+    left: 10vh;
+    top: 305px;
+}
+.noodle button:hover {
+    background-color: #3D025A;
+    transform: scale(1.2);
+}
+
+.panqueca img {
+    width: 30px;
+    height: 30px;
+}
+.panqueca button {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+    background-color: #AA00FF;
+    cursor: pointer;
+    position: absolute;
+    left: 10vh;
+    top: 380px;
+    z-index: 10; /* Ajuste de z-index para a panqueca */
+}
+.panqueca button:hover {
+    background-color: #3D025A;
+    transform: scale(1.2);
+}
+.h2aca{
+	position: absolute;
+	top: 4px;
+	left: 550px;
+	
+}
+   .h2copo h2{
+  
+	position: absolute;
+	top: 715px;
+	left: 365px;
+	
+}
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s;
+}
+
+.slideshow img.active {
+  opacity: 1;
+}
+
+@keyframes fade {
+  0% { opacity: 1; }
+  33% { opacity: 0; }
+  66% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.slider-container {
+  margin-top: 40vh;
+  text-align: center;
+}
+
+.slider {
+  width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slider img{
+	height: 500px;
+	width: 500px;
+	border-radius: 50px;
+}
+.panqueca button:hover {
+    background-color: #3D025A; 
+    transform: scale(1.2);
+}
+.Omeletes{
+	background: transparent;
+	 backdrop-filter: blur(10px);
+	 border: solid 6px yellow;
+	 border-radius:  70px;
+	 height: 50vh;
+	 width: 50vh;
+	 position: absolute;
+	left: 90vh;
+	top: 47px;
+	 
+}
+.Porçoes{
+	background: transparent;
+	 backdrop-filter: blur(10px);
+	 border: solid 6px yellow;
+	 border-radius:  70px;
+	 height: 50vh;
+	 width: 50vh;
+     position: absolute;
+	left: 30vh;
+	top: 47px;
+}
+.bebidas{
+	background: transparent;
+	 backdrop-filter: blur(10px);
+	 border: solid 6px yellow;
+	 border-radius:  70px;
+	 height: 30vh;
+	 width: 60vh;
+}
+
+
+
+
+
+.box {
+  background: #fff;
+  padding: 20px;
+  margin: 10px 0;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box h3, .box h2, .box h4, .box h6 {
+  margin: 10px 0;
+}
+
+/* Ajustes responsivos */
+.col-sm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: yellow;
+  width: 50%;
+  
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.box {
+  background: #fff;
+  padding: 20px;
+  margin: 10px 0;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box h3, .box h2, .box h4, .box h6 {
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 685px) {
+body {
+ 
+ height: 1px;
+  background: yellow;
+  font-color: yellow;
+ 
+    
+}
+  .containers {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .boxing {
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .acai h1, .acai h2 {
+    font-size: 24px;
+    position: static;
+    left: auto;
+    top: auto;
+  }
+
+  .aca {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Garante que não ultrapasse a largura da viewport */
+  }
+
+  .menu img {
+    width: 100%;
+    height: 10px;
+    position: static;
+    max-width: 100%; /* Garante que não ultrapasse a largura da viewport */
+  }
+
+  #icone {
+    height: 50px;
+    width: 50px;
+    position: static;
+    margin: 10px 0;
+  }
+
+  span, p {
+    position: static;
+    margin: 5px 0;
+  }
+
+  .cor, .acai, .container, .aca, .distancias, .h2aca, .h2copo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: purple;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .cor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: purple;
+    width: 100%;
+     height: 1190px; 
+    border: 5px solid #3D025A;
+    position: relative; /* Alinhado com o fluxo do documento */
+    top: 0; /* Ajuste para iniciar no topo da página */
+    box-sizing: border-box; /* Inclui a borda na largura total */
+    margin: 0; /* Remove margens externas */
+    padding: 0; /* Remove padding interno */
+	left: 1px;
+  }
+
+  .cor img{
+	left: 75px;
+	height: 209px;
+	width: 209px;
+	border-radius: 30px;
+	 box-shadow:  4px 4px 12px rgba(0, 0, 0, 0.8);
+	 
+
+}
+  .drive {
+	position: absolute;
+	top: 700px;
+  }
+  .slider img{
+	 height: 190px;
+	 width: 190px;
+	 position: absolute;
+	 left: 118px;
+    top: 100px;
+  }
+}
+
+  .boxi img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Garante que não ultrapasse a largura da viewport */
+  }
+
+  .Botão button,
+  .Cor button,
+  .EGG button,
+  .Steak button,
+  .Beef button,
+  .noodle button,
+  .panqueca button {
+    height: 40px;
+    width: 40px;
+    left: 10px;  
+    margin:  0;
+  }
+
+  .h2aca, .h2copo {
+    font-size: 24px;
+    position: static;
+    margin-right: 10px;
+  }
+
+
+  .col-sm {
+    display: flex;
+    align-items: center;
+    background: yellow;
+    width: 100%; /* Ajustado para garantir que ocupe toda a largura da viewport */
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .box {
+    background: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .box h3, .box h2, .box h4, .box h6 {
+    margin: 10px 0;
+  }
+  .menu img{
+	height: 290px;
+	width: 290px;
+  }
+ 

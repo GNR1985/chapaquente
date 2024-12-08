@@ -1,0 +1,143 @@
+@media screen and (max-width: 390px) {
+  body {
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .containers {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .boxing {
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .acai h1, .acai h2 {
+    font-size: 24px;
+    left: 10px;
+    top: 10px;
+    position: static;
+  }
+
+  .aca {
+    width: 100%;
+    height: auto;
+  }
+
+  .menu img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: static;
+    top: 0;
+  }
+
+  .aca h2 {
+    top: auto;
+    left: auto;
+    position: static;
+  }
+
+  #icone {
+    height: 50px;
+    width: 50px;
+    position: static;
+    margin: 10px 0;
+  }
+
+  span, p {
+    position: static;
+    margin: 5px 0;
+  }
+
+
+    .cor {
+        height: 90vh; 
+		top: 700px;
+		width: 370px;
+    }
+}
+    .cor img {
+    height: 10rem;
+    
+    position: static;
+    margin: 10px 0;
+  }
+
+  .boxi img {
+    width: 100%;
+    height: auto;
+  }
+
+  .Botão button,
+  .Cor button,
+  .EGG button,
+  .Steak button,
+  .Beef button,
+  .noodle button,
+  .panqueca button {
+    height: 40px;
+    width: 40px;
+    left: 2rem;
+    transform: translateX(-50%);
+    margin: 10px 0;
+  }
+
+  .h2aca, .h2copo {
+    position: static;
+    margin: 5px 0;
+  }
+
+  .Omeletes, .Porçoes, .bebidas {
+    height: 50vw; /* Altura igual a 30% da largura da viewport */
+    width: 80vw; /* Largura igual a 30% da largura da viewport */
+    left: 180px; /* Ajuste para centralizar na tela */
+    top: 90px; /* Centraliza verticalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centralizar verticalmente e horizontalmente */
+    position: relative; /* Volta para posição relativa */
+    margin-bottom: 20px; /* Espaço entre os cards */
+    border: solid 6px yellow; /* Borda com 6px amarela */
+    border-radius: 70px; /* Bordas arredondadas */
+    background: transparent; /* Fundo transparente */
+    backdrop-filter: blur(10px); /* Efeito de blur */
+    display: flex; /* Exibe em flexbox */
+    flex-direction: column; /* Direção de coluna */
+    align-items: center; /* Centraliza itens */
+    justify-content: center; /* Centraliza conteúdo */
+    text-align: center; /* Alinhamento de texto */
+    padding: 2px; /* Espaçamento interno */
+    margin: 1px; /* Centraliza na horizontal */
+  }
+ .Porçoes{
+	position: absolute;
+	top: 100px;
+	left: 220px;
+ }
+  .Omeletes h1, .Porçoes h1, .bebidas h1 {
+    font-size: 4vw; /* Ajuste o tamanho conforme necessário */
+  }
+
+  .Omeletes h2, .Porçoes h2, .bebidas h2 {
+    font-size: 3.5vw; /* Ajuste o tamanho conforme necessário */
+  }
+
+  .Omeletes h3, .Porçoes h3, .bebidas h3 {
+    font-size: 3vw; /* Ajuste o tamanho conforme necessário */
+  }
+
+  .Omeletes h4, .Porçoes h4, .bebidas h4 {
+    font-size: 2.5vw; /* Ajuste o tamanho conforme necessário */
+  }
+
+  .Omeletes h6, .Porçoes h6, .bebidas h6 {
+    font-size: 2vw; /* Ajuste o tamanho conforme necessário */
+  }
+
+ 
+  
+
+}
+}

@@ -1,0 +1,61 @@
+.acai h1{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #eAA00FF; 
+  font-color: yellow;
+  font-family: 'Roboto', sans-serif; /* 'sans-serif' não precisa de aspas */
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: "Arial";
+	gap:16px;
+    
+} 
+
+.acai h1{
+   font-family: "impact", cursive;
+	font-size: 100px;
+	position: absolute;
+	left: 60vh;
+	top: 40px;
+    color: #FFFFFF;
+}
+
+.acai h2{
+	font-family: "Impact", cursive;
+	font-size: 100px;
+	position: absolute;
+	left: 60vh;
+	top: 119px;
+    color: green;
+}
+.aca {
+	width: 400px;
+	height: 400px;
+}
+
+#icon{
+	height: 70px;
+	width: 70px;
+    position: absolute;
+	left: 140vh;
+	top: 209px;
+}
+span{
+	
+	position: absolute;
+	left: 140vh;
+	top: 281px;
+}
+p{
+	position: absolute;
+	left: 140vh;
+	top: 299px;

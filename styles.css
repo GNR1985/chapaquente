@@ -1,0 +1,60 @@
+body{
+   background: yellow;
+   justify-content: center;
+  
+}
+
+
+
+
+
+.box {
+  background: #fff;
+  padding: 20px;
+  margin: 100px 300px;
+  width: 500px;
+  height: 400px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+   font-family: "Changa", sans-serif;
+
+   
+	color: black;
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 90%;
+    width: 100%; /* O texto agora ocupará toda a largura da tela */
+    display: flex;
+    background: transparent;
+	backdrop-filter: blur(12px);
+
+    border-radius: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center; /* Centraliza o texto */
+}
+  
+}
+.home{
+	height: 55px;
+	width: 55px;
+	background: #ffffff;
+	border-radius: 50px;
+	box-shadow: 1px 3px 7px 6px #aaaa;
+	 transition: background-color 0.5s ease;
+}
+
+.home svg{
+	height: 35px;
+	width: 35px;
+    padding: 10px;
+}
+
+
+
+

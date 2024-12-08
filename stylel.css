@@ -1,0 +1,526 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: yellow; 
+  font-color: yellow;
+  font-family: 'Roboto', sans-serif; /* 'sans-serif' não precisa de aspas */
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: "Arial";
+	gap:16px;
+   
+}
+	nav.menu-lateral {
+  width: 80px;
+  height: 100%; 
+  background-color: red;
+  padding: 40px 0 40px 1%;
+  box-shadow: 3px 0 0 #F1C40F; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Para empurrar o botão do WhatsApp para baixo */
+}
+
+.menu-lateral .item-menu .icon,
+.menu-lateral .item-menu .text-link {
+    display: none; /* ou visibility: hidden; */
+}
+
+.menu-lateral.expandir .item-menu .icon,
+.menu-lateral.expandir .item-menu .text-link {
+    display: inline; /* ou visibility: visible; */
+}
+
+nav.menu-lateral.expandir {
+  width: 300px;
+}
+
+.WattysApp-link {
+  position: absolute; /* Usar posição absoluta para manter dentro do menu lateral */
+  bottom: 20px; /* Ajuste a distância do fundo conforme necessário */
+  right: 20px; /* Ajuste a distância da borda direita conforme necessário */
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  z-index: 1000;
+  top: 90vh;
+  left: 20px;
+  
+}
+
+/* Ajustes adicionais para manter o conteúdo do menu dentro do menu lateral */
+.menu-lateral ul {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.btn{
+	padding-bottom: 12px;
+}
+
+.btn-expandir {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.btn-expandir > i {
+  color: yellow;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+ul {
+  height: 100%;
+  list-style-type: none;
+}
+.menu-lateral p{
+    font-size: 10px;
+	color: yellow;
+	position: absolute;
+	top: 87vh;
+}
+ul li.item-menu {
+  transition: 1s;
+}
+
+ul li:hover {
+  background-color: #F1C40F;
+}
+
+ul li.item-menu:hover {
+  background: #F1C40F;
+}
+
+ul li.item-menu a {
+  color: yellow;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 4%;
+  display: flex;
+  line-height: 40px;
+}
+
+ul li.item-menu a .text-link {
+  margin-left: 50px;
+}
+
+ul li.item-menu a.icon > i {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+#detail {
+  list-style: none;
+}
+
+h1, h2, h3, .price {
+  font-family: 'Roboto Serif', serif;
+  text-transform: uppercase; /* Corrigido de 'text-tranform' */
+  color: #43002E;
+  border-radius: 30px;
+}
+
+header {
+  padding: 32px 0; /* Corrigido de 'padding 32px 0' */
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 4px;
+  font-size: 38px;
+  line-height: 33px;
+}
+
+header h1 span {
+  color: #995000;
+}
+
+header p {
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.7); /* Corrigido de 'rgba(0,0,0,0, 0.7)' */
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+section h2 {
+  background-color: #EA0000;
+  padding: 8px 16px;
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 22px;
+}
+
+ul li {
+  margin-bottom: 16px;
+  display: flex;
+}
+
+li.details { /* Corrigido de 'li.Details' */
+  max-width: 240px;
+}
+
+.details h3 {
+  margin-bottom: 8px; /* Corrigido de 'margin-buttom' */
+  font-size: 20px;
+}
+
+.details p { /* Corrigido de 'deitails p' */
+  color: rgba(0, 0, 0, 0.6); 
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-around;
+  margin: 17px;
+  line-height: 20px;
+}
+
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    height: 60%; /* Aumente a altura para ocupar mais espaço */
+}
+
+.card {
+    background-color: #fff;
+    width: 280px; /* Aumente a largura */
+    height: 120px; /* Aumente a altura */
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #aaaaaa;
+	position: absolute;
+	top: -3vh;
+}
+
+.card h1 {
+    font-size: 1.4rem; 
+}
+
+.card h2 {
+    font-size: 1rem; /* Ajuste o tamanho da fonte */
+    color: #aaaaaa;
+}
+
+.card img {
+    width: 100%;
+    height: 240px; /* Aumente a altura da imagem */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px; /* Corrigido 'rigth' para 'right' */
+}
+
+.card button {
+    background-color: #2192ff;
+    height: 35px; /* Aumente a altura do botão */
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px; /* Adicione border-radius se desejar */
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.top-button {
+    background-color: red;
+    color: yellow;
+	text-decoration: none;
+}
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  animation: fade 10s infinite;
+}
+
+@keyframes fade {
+  0% { opacity: 1; }
+  33% { opacity: 0; }
+  66% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.slider-container {
+  margin-top: 50px;
+  text-align: center; 
+}
+
+.slider {
+  width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 100%;
+  display: none;
+}
+
+.slider img:first-child {
+  display: block;
+}
+.buttom{
+	width: 20vh;
+	height: 50px;
+	background: red;
+	color: yellow;
+	border: none;
+	border-radius: 70px;
+	box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+	cursor: pointer;
+	
+}
+.buttom:hover{
+	background-color: #E60A0A;
+	transform: scaley(1.2);
+}
+.promo {
+	display: flex;
+	justify-content: center;
+	border-radius: 70px;
+	padding: 10px;
+	height: 60px;
+	width: 60vh;
+	background: red;
+	box-shadow: 4px 4px 12px rgba(0,0,0,0.8);
+
+     position: absolute;
+	  top: 3px;
+}
+.promo h1{
+	  font-family: "Archivo Black", sans-serif;
+	  color: yellow;
+	  
+	  position: absolute;
+	  top: 4px;
+	  
+}
+
+.tittle h2 {
+	font-family: "Impact", sans-serif;
+	padding: 40px;
+	color: red;
+
+     position: absolute;
+	  top: 8vh;
+	  left: 81vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Ajuste conforme necessário */
+    padding: 20px;
+
+     
+}
+
+.box {
+    color: black;
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Permite que as divs cresçam igualmente */
+    margin: 0 10px; /* Espaço entre as divs */
+}
+
+.box:first-child {
+    margin-left: 0; /* Remove o espaço à esquerda da primeira div */
+}
+
+.box:last-child {
+    margin-right: 0; /* Remove o espaço à direita da última div */
+}
+@media screen and (max-width: 685px) {
+  body {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .menu-lateral {
+    width: 60px;
+    padding: 20px 0;
+  }
+
+  .menu-lateral.expandir {
+    width: 200px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .slider {
+    width: 100%;
+	
+  }
+
+  .promo {
+    width: 50%;
+    height: 30px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .box {
+    margin: 10px 0;
+    width: 90%;
+  }
+
+  .tittle h2 {
+    font-size: 20px;
+    left: 118px;
+    top: 5vh;
+    padding: 20px;
+   
+	text-align: center;
+  }
+
+  .buttom {
+    width: 80%;
+    height: 40px;
+  }
+
+  .WattysApp-link {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 12px;
+  }
+
+  section h2 {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  ul li.item-menu a {
+    font-size: 16px;
+  }
+  nav.menu-lateral {
+  width: 80px;
+  height: 100%; 
+  background-color: red;
+  padding: 40px 0 40px 1%;
+  box-shadow: 3px 0 0 #F1C40F; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  z-index: 2000; /* Maior que o z-index do slider-container */
+}
+
+/* CSS para o slider-container */
+.slider-container {
+  position: absolute;
+  left: 15vh; /* Ajuste conforme necessário */
+  top: 15vh; /* Ajuste conforme necessário */
+  width: 200px; /* Ou um valor específico se necessário */
+  height: 200px; /* Ou um valor específico se necessário */
+  margin: 0; /* Remove margens extras */
+  padding: 0; /* Remove preenchimento extra */
+  box-sizing: border-box; /* Inclui bordas e preenchimento no cálculo da largura */
+  z-index: 1000; /* Menor que o z-index do menu lateral */
+}
+  .promo h1 {
+    font-size: 18px;
+  }
+  .slider-container {
+    position: absolute;
+    left: 15vh; /* Ajuste conforme necessário */
+    top: 15vh; /* Ajuste conforme necessário */
+    width: 200px; /* Ou um valor específico se necessário */
+    height: 200px; /* Ou um valor específico se necessário */
+    margin: 0; /* Remove margens extras */
+    padding: 0; /* Remove preenchimento extra */
+    box-sizing: border-box; /* Inclui bordas e preenchimento no cálculo da largura */
+}
+  .menu-lateral p{
+    font-size: 10px;
+	color: yellow;
+	position: absolute;
+	top: 66vh;
+}
+  .WattysApp-link {
+  position: absolute; /* Usar posição absoluta para manter dentro do menu lateral */
+  bottom: 20px; /* Ajuste a distância do fundo conforme necessário */
+  right: 20px; /* Ajuste a distância da borda direita conforme necessário */
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  z-index: 1000;
+  top: 570px;
+  left: 25px;
+  
+}
+
+}

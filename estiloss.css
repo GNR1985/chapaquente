@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #E9F40A;
+  font-family: 'Roboto', 'sans-serif';
+}
+
+nav.menu-lateral {
+  width: 80px;
+  height: 100%; 
+  background-color: red;
+  padding: 40px 0 40px 1%;
+  box-shadow: 3px 0 0 #F1C40F; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+nav.menu-lateral.expandir {
+  width: 300px;
+}
+
+.btn-expandir {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.btn-expandir > i {
+  color: yellow;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+ul {
+  height: 100%;
+  list-style-type: none;
+}
+
+ul li.item-menu {
+  transition: 1s;
+}
+
+ul li:hover {
+  background-color: #F1C40F;
+}
+
+ul li.item-menu:hover {
+  background: #F1C40F;
+}
+
+ul li.item-menu a {
+  color: yellow;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 4%;
+  display: flex;
+  line-height: 40px;
+}
+
+ul li.item-menu a .text-link {
+  margin-left: 50px;
+}
+
+ul li.item-menu a.icon > i {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+#detail {
+  list-style: none;
+}
+
+h1, h2, h3, .price {
+  font-family: 'Roboto Serif', serif;
+  text-transform: uppercase; /* Corrigido de 'text-tranform' */
+  color: #43002E;
+  border-radius: 30px;
+}
+
+header {
+  padding: 32px 0; /* Corrigido de 'padding 32px 0' */
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 4px;
+  font-size: 38px;
+  line-height: 33px;
+}
+
+header h1 span {
+  color: #995000;
+}
+
+header p {
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.7); /* Corrigido de 'rgba(0,0,0,0, 0.7)' */
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+section h2 {
+  background-color: #EA0000;
+  padding: 8px 16px;
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 22px;
+}
+
+ul li {
+  margin-bottom: 16px;
+  display: flex;
+}
+
+li.details { /* Corrigido de 'li.Details' */
+  max-width: 240px;
+}
+
+.details h3 {
+  margin-bottom: 8px; /* Corrigido de 'margin-buttom' */
+  font-size: 20px;
+}
+
+.details p { /* Corrigido de 'deitails p' */
+  color: rgba(0, 0, 0, 0.6); /* Corrigido de 'rgba(0,0,0,0,6)' */
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-around;
+  margin: 17px;
+  line-height: 20px;
+}
